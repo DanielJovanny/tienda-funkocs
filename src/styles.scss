@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    /*Main Colors*/
+    --main: #48C9B0;
+    --second-color: #17202A;
+    --third-color: #8FBAF3;
+    --fourth-color: #FFFFFF;
+    --fifth-color: #BDF1F6;
+    --body-color: #F5F5F5;
+    /*Text Color*/
+    --title: #34495E;
+    --subtitle: #17202A;
+    --normal-text: #34495E;
+    --label-text: #808B96;
+    /*Fonts size*/
+    /*small*/
+    --sm-first: 0.25rem;
+    --sm-second: 0.5rem;
+    --sm-third: .75rem;
+    /*medium*/
+    --m-first: 1rem;
+    --m-second: 1.25rem;
+    --m-third: 1.5rem;
+    /*Large*/
+    --lg-first: 2rem;
+    --lg-second: 3rem;
+    --lg-third: 4rem;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: var(--body-color);
+    /* color-scheme: dark;*/
+    font-size: var(--m-first);
+    margin: 0px;
+    box-sizing: border-box;
+    transition: all .5s;
+    color: var(--normal-text);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+/*BOTONES*/
+
+.btn {
+    transition: all .5s;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px)
+}
+
+.btn-add-car {
+    background-color: var(--main);
+    color: var(--fourth-color)
+}
+
+.btn-add-car:hover {
+    background-color: var(--main);
+    color: var(--fourth-color);
+    opacity: .75;
+}
