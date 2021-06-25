@@ -1,1 +1,1 @@
-# tienda-funkocs
+# tienda-funkos
