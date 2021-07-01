@@ -64,3 +64,61 @@ body {
     color: var(--fourth-color);
     opacity: .75;
 }
+
+
+/*Secciones*/
+
+.section {
+    margin: 120px auto 0 auto;
+}
+
+
+/*Titulos*/
+
+.title {
+    color: var(--fourth-color);
+    font-weight: bold;
+    font-size: var(--lg-third);
+    margin-bottom: 2.5rem;
+    line-height: 1;
+}
+
+.subtitle {
+    margin-bottom: 2.5rem;
+    font-size: var(--m-third);
+    color: var(--fourth-color);
+}
+
+.title-section {
+    color: var(--title);
+    font-size: var(--lg-first);
+    font-weight: bold;
+    padding: 0 0 120px 0;
+    text-align: center;
+}
+
+
+/*Resposive*/
+
+@media (max-width: 980px) {
+    .title {
+        font-size: var(--lg-second);
+        margin-bottom: 2.5rem;
+        line-height: 1;
+    }
+    .section {
+        margin: 100px auto 0 auto;
+    }
+    .title-section {
+        padding: 0 0 100px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        margin: 40px auto 0 auto;
+    }
+    .title-section {
+        padding: 0 0 40px 0;
+    }
+}

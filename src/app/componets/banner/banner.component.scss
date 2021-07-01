@@ -24,20 +24,6 @@
     transform: translateY(-5px)
 }
 
-.title {
-    color: var(--fourth-color);
-    font-weight: bold;
-    font-size: var(--lg-third);
-    margin-bottom: 2.5rem;
-    line-height: 1;
-}
-
-.subtitle {
-    margin-bottom: 2.5rem;
-    font-size: var(--m-third);
-    color: var(--fourth-color);
-}
-
 .img-main {
     width: 450px;
     height: auto;
@@ -64,72 +50,6 @@
     animation-duration: 5s;
 }
 
-
-/*Colecction seccion*/
-
-.featured-product {
-    height: 600px;
-    padding: 140px 0;
-}
-
-.product-img {
-    position: absolute;
-    margin: 0 auto;
-    left: 0px;
-    right: 0px;
-    width: 240px;
-    top: -100px;
-    transition: all .5s;
-    filter: drop-shadow(2px 4px 6px rgb(0, 0, 0, .20));
-}
-
-.img-container {
-    position: relative;
-    height: 50px;
-    margin-bottom: 80px;
-}
-
-.card {
-    min-height: 300px;
-    max-width: 265px;
-    transition: all 0.5s;
-    margin: 0 auto;
-}
-
-.card:hover .product-img {
-    transform: translateY(-10px);
-}
-
-.card:hover {
-    box-shadow: 0 0 25px 5px rgb(0 0 0 / 10%);
-    transform: translateY(-10px);
-}
-
-.price {
-    text-decoration: none;
-    padding: .375rem .75rem;
-    font-weight: 500;
-    color: var(--main);
-}
-
-.product-title {
-    text-align: center;
-    font-weight: bold;
-    font-size: var(--m-second);
-}
-
-.product-description {
-    text-align: center;
-}
-
-.pleca-product {
-    width: 60%;
-    margin: 1.5rem auto;
-    height: 3px;
-    opacity: 1;
-    background-color: var(--main);
-}
-
 @keyframes slide {
     0% {
         transform: translateX(-25%);
@@ -140,48 +60,28 @@
 }
 
 @media (max-width: 980px) {
-    .title {
-        font-size: var(--lg-second);
-        margin-bottom: 2.5rem;
-        line-height: 1;
-    }
     .container-banner {
-        height: 750px;
+        height: 550px;
     }
-    .col-sm-4 {
-        flex: 0 0 auto;
-        width: 50%;
-        margin-bottom: 6rem;
-    }
-    .featured-product {
-        height: auto;
+    .img-main {
+        width: 350px;
     }
 }
 
 @media (max-width: 640px) {
-    .row-featured-product {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
     .row-banner {
         text-align: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .container-banner {
+        height: 750px;
     }
     .img-main {
         width: 340px;
     }
-    .container-banner {
-        height: 850px;
-    }
     .container-banner>.container {
         padding-left: 0px;
         padding-right: 0px;
-    }
-    .col-sm-4 {
-        flex: 0 0 auto;
-        width: 100%;
-        margin-bottom: 6rem;
-    }
-    .featured-product {
-        height: auto;
     }
 }

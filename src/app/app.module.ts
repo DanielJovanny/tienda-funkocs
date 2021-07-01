@@ -7,7 +7,15 @@ import { AppComponent } from './app.component';
 import {HeaderComponent}from './componets/header/header.component';
 import {BannerComponent}from './componets/banner/banner.component';
 import {FooterComponent}from './componets/footer/footer.component';
-import {ContactComponent}from './componets/contact/contact.component';
+import {FormComponent}from './componets/form/form.component';
+import {FeaturedProductComponent}from './componets/featured-product/featured-product.component';
+import {NewProductComponent}from './componets/new-product/new-product.component';
+import {IndividualProductComponent}from './componets/individual-product/individual-product.component';
+/*Paginas */
+import {HomePage}from './pages/home/home.page';
+import {ContactPage}from './pages/contact/contact.page';
+import {AboutUsPage}from './pages/about-us/about-us.page';
+
 
 /*Animaciones */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,10 +28,17 @@ import {MatIconModule} from '@angular/material/icon';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
-    BannerComponent,
     HeaderComponent,
+    BannerComponent,
+    FeaturedProductComponent,
+    NewProductComponent,
+    IndividualProductComponent,
     FooterComponent,
-    ContactComponent,
+    FormComponent,
+    HomePage,
+    AboutUsPage,
+    ContactPage,
+
   ],
   imports: [
     BrowserModule,

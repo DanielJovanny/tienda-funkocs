@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BannerComponent } from './componets/banner/banner.component';
-import { ContactComponent } from './componets/contact/contact.component';
+import { HomePage } from './pages/home/home.page';
+import { ContactPage } from './pages/contact/contact.page';
+import {  AboutUsPage } from './pages/about-us/about-us.page';
 
 const routes: Routes = [
-  {path:'',component:BannerComponent},
-  {path:'quienes-somos',component:BannerComponent},
-  {path:'contactanos',component:ContactComponent},
+  {path:'',component:HomePage},
+  {path:'quienes-somos',component:AboutUsPage},
+  {path:'contactanos',component:ContactPage},
   
 ];
 
