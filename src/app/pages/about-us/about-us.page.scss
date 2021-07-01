@@ -1,0 +1,37 @@
+.title {
+    color: var(--title);
+}
+
+.subtitle {
+    position: relative;
+    color: var(--subtitle);
+    margin-bottom: 1.75em;
+    width: fit-content;
+}
+
+.subtitle:after {
+    content: "";
+    width: 100%;
+    border-bottom: solid 5px var(--main);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    z-index: 1;
+}
+
+.text {
+    font-size: var( --m-first);
+    margin-bottom: 1.75em;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 640px) {
+    .text {
+        font-size: var( --m-second);
+        margin-bottom: 1.75em;
+    }
+}
