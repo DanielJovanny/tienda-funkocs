@@ -20,6 +20,12 @@
     </div>
 
 </div>
-
-<button mat-button color="primary" (click)="httpRequest()">Http Request</button>
-<button mat-button color="primary" (click)="httpRequestToken()">Http Request Token</button>
+<div style="text-align: center;">
+    <button mat-button color="primary" (click)="httpRequest()">Http Request</button>
+    <button mat-button color="primary" (click)="httpRequestToken()">Http Request Token</button>
+    <ul *ngFor="let item of users">
+        <li>
+            {{item}}
+        </li>
+    </ul>
+</div>
